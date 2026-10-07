@@ -14,7 +14,7 @@ contraste alto y un solo color de acento.
 | marfil | #F6F2EA | Texto principal |
 | beige | #E6DCCB | Secciones claras / texto secundario |
 | bruma | #9A9489 | Texto atenuado, placeholders |
-| dorado | #B8975A | Acento: botones, detalles, iconos |
+| dorado | #C9A24A | Acento: botones, detalles, iconos |
 | dorado-hover | #9C7E45 | Hover del acento |
 
 Regla: el dorado es el único acento. Se usa en menos del 10% de la pantalla.
