@@ -9,3 +9,4 @@
 | Venta | Enlace a Instagram | Requisito del cliente en v1 |
 | Deploy | Vercel / Netlify | Gratis, conectado a GitHub |
 | Enfoque | Mobile-first | El tráfico viene de Instagram |
+| Destacados | Campo `destacado: true` en `perfumes.js` | Evita duplicar datos entre catálogo y destacados |

@@ -34,7 +34,7 @@ por disponibilidad, precios y pedidos de decants.
 ## Estilo visual sugerido
 - Minimalista y premium
 - Fondo predominante negro o grafito
-- Acentos en dorado/lima vintage para detalles de lujo
+- Acentos en dorado mate para detalles de lujo
 - Tipografía elegante y moderna
 - Imágenes de perfumes con gran estética, clean y premium
 - Diseño pensado para móvil primero, con una apariencia sofisticada y premium en desktop
