@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import HeroImg from '../assets/scandal-pour-homme.webp'
 
 const contenedor = {
   hidden: {},
@@ -55,15 +56,16 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Imagen (placeholder por ahora) */}
-        <motion.div
+                {/* Imagen */}
+        <motion.img
+          src={HeroImg}
+          alt="Frasco de Scandal Pour Homme"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex aspect-[4/5] items-center justify-center rounded-lg border border-linea bg-gradient-to-b from-carbon to-grafito text-sm text-bruma"
-        >
-          Imagen del frasco
-        </motion.div>
+          className="mx-auto aspect-[4/5] w-full max-w-md rounded-lg border border-linea object-cover"
+        />
+      
       </div>
     </section>
   )

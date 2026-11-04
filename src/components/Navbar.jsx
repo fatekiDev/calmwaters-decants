@@ -16,7 +16,7 @@ export default function Navbar() {
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-5 md:h-28">
         {/* Logo */}
         <a href="#inicio" aria-label="Ir al inicio">
-          <img src={logo} alt={SITE.nombre} className="h-auto w-24 md:w-32" />
+          <img src={logo} alt={SITE.nombre} className="h-21 w-auto md:w-auto" />
         </a>
 
         {/* Links (solo desktop) */}
