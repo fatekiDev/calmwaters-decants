@@ -1,11 +1,12 @@
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <main className="pt-20 md:pt-28">
-        <section id="inicio" className="h-screen" />
+      <main>
+        <Hero />
       </main>
     </>
   )
