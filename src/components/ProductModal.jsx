@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { SITE } from '../data/site'
 import { FORMATOS } from '../data/formatos'
 import { formatearPrecio } from '../utils/FormatearPrecio'
+import AcordesBarras from './AcordesBarras'
 
 export default function ProductModal({ perfume, onCerrar }) {
   const formatos = Object.keys(perfume.precios)
@@ -27,11 +28,13 @@ export default function ProductModal({ perfume, onCerrar }) {
     }
   }, [onCerrar])
 
-  const notas = [
-    ['Salida', perfume.notas.salida],
-    ['Corazón', perfume.notas.corazon],
-    ['Fondo', perfume.notas.fondo],
-  ]
+  const notas = perfume.notas
+  ? [
+      ['Salida', perfume.notas.salida],
+      ['Corazón', perfume.notas.corazon],
+      ['Fondo', perfume.notas.fondo],
+    ]
+  : []
 
   return (
     <motion.div
@@ -80,15 +83,28 @@ export default function ProductModal({ perfume, onCerrar }) {
           </h3>
           <p className="mt-4 text-sm text-bruma">{perfume.descripcion}</p>
 
-          {/* Notas */}
-          <dl className="mt-6 space-y-2">
-            {notas.map(([titulo, lista]) => (
-              <div key={titulo} className="flex gap-3 text-sm">
-                <dt className="w-20 shrink-0 text-bruma">{titulo}</dt>
-                <dd>{lista.join(', ')}</dd>
-              </div>
-            ))}
-          </dl>
+          
+                    {/* Acordes principales */}
+          {perfume.acordes && (
+            <>
+              <p className="mt-8 text-xs uppercase tracking-[0.3em] text-bruma">
+                Acordes principales
+              </p>
+              <AcordesBarras acordes={perfume.acordes} />
+            </>
+          )}
+
+          {/* Notas (opcional) */}
+          {notas.length > 0 && (
+            <dl className="mt-6 space-y-2">
+              {notas.map(([titulo, lista]) => (
+                <div key={titulo} className="flex gap-3 text-sm">
+                  <dt className="w-20 shrink-0 text-bruma">{titulo}</dt>
+                  <dd>{lista.join(', ')}</dd>
+                </div>
+              ))}
+            </dl>
+          )}
 
           {/* Formatos */}
           <p className="mt-8 text-xs uppercase tracking-[0.3em] text-bruma">
