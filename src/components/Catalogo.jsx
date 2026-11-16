@@ -1,14 +1,12 @@
 import { useState } from 'react'
 import { PERFUMES } from '../data/perfumes'
 import ProductCard from './ProductCard'
-import { AnimatePresence } from 'framer-motion'
-import ProductModal from './ProductModal'
 
 // Los filtros se generan solos a partir de los datos
 const FAMILIAS = ['Todos', ...new Set(PERFUMES.map((p) => p.familia))]
 const POR_PAGINA = 8
 
-export default function Catalogo() {
+export default function Catalogo({ onSeleccionar }) {
   const [familia, setFamilia] = useState('Todos')
   const [visibles, setVisibles] = useState(POR_PAGINA)
   const [seleccionado, setSeleccionado] = useState(null)
@@ -56,7 +54,7 @@ export default function Catalogo() {
             <ProductCard
               key={perfume.id}
               perfume={perfume}
-              onSeleccionar={setSeleccionado}
+              onSeleccionar={onSeleccionar}
             />
           ))}
         </div>
@@ -75,15 +73,7 @@ export default function Catalogo() {
         )}
       </div>
 
-      <AnimatePresence>
-        {seleccionado && (
-          <ProductModal
-            key={seleccionado.id}
-            perfume={seleccionado}
-            onCerrar={() => setSeleccionado(null)}
-          />
-        )}
-      </AnimatePresence>
+      
     </section>
   )
 }
