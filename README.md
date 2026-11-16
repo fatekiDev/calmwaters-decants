@@ -4,7 +4,7 @@ Landing page para **calmwaters_decants**, una tienda de decants de perfumes orig
 
 ## Sitio en vivo
 
-[Visitar Calmwaters Decants](https://calmwaters-decants.netlify.app/)
+[Visitar Calmwaters Decants](https://calmwaters-decants.web.app/)
 
 ## Capturas
 
@@ -54,6 +54,16 @@ npm run build
 npm run preview
 ```
 
+## Desplegar en Firebase Hosting
+
+El proyecto sirve el build estático de Vite desde `dist/`.
+
+```bash
+npx firebase-tools login
+npm run build
+npx firebase-tools deploy --only hosting
+```
+
 ## Estructura
 
 ```text
@@ -62,6 +72,8 @@ src/
   components/   Secciones y componentes de la interfaz
   data/         Productos, formatos y contenido del sitio
   utils/        Funciones auxiliares
+firebase.json   Configuración de Firebase Hosting
+.firebaserc     Proyecto Firebase predeterminado
 docs/
   screenshots/  Capturas incluidas en este README
 public/         Recursos estáticos
