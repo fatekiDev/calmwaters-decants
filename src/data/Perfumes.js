@@ -1,5 +1,6 @@
 import scandal from '../assets/perfumes/scandal-pour-homme.webp'
 import stronger from '../assets/perfumes/stronger-with-you.webp'
+import acqua from '../assets/perfumes/acqua-di-gio.webp'
 
 export const PERFUMES = [
   {
@@ -8,59 +9,79 @@ export const PERFUMES = [
     marca: 'Jean Paul Gaultier',
     familia: 'Amaderados', // define el filtro del catálogo
     imagen: scandal,
-    descripcion: 'Descripción de ejemplo. Aquí va el texto real del perfume.',
+    descripcion:
+      'Una fragancia moderna que combina el dulzor del caramelo con la frescura de la esclarea y un fondo amaderado. Versátil para el día a día o una salida especial.',
     notas: {
-      salida: ['Nota 1', 'Nota 2'],
-      corazon: ['Nota 3', 'Nota 4'],
-      fondo: ['Nota 5', 'Nota 6'],
+      salida: ['Mandarina', 'Esclarea'],
+      corazon: ['Caramelo', 'Haba tonka'],
+      fondo: ['Vetiver'],
     },
-    precios: { '3 ml': 4990, '5 ml': 9990, '10 ml': 17990 },
+    acordes: [
+      { nombre: 'Caramelo', nivel: 100, color: '#E4A64E' },
+      { nombre: 'Aromático', nivel: 82, color: '#52AC98' },
+      { nombre: 'Dulce', nivel: 76, color: '#EF555C' },
+      { nombre: 'Cítrico', nivel: 70, color: '#F6F789' },
+      { nombre: 'Avainillado', nivel: 66, color: '#FFF8D6' },
+      { nombre: 'Ámbar', nivel: 60, color: '#D99573' },
+      { nombre: 'Especiado suave', nivel: 54, color: '#ECA995' },
+      { nombre: 'Amaderado', nivel: 48, color: '#B69A7D' },
+    ],
+    precios: { '3 ml': 5500, '5 ml': 8000, '10 ml': 14000 },
     destacado: true, // aparecerá en la sección "Destacados"
   },
   
   {
     id: 'stronger-with-you',
-    nombre: 'Stronger With You',
+    nombre: 'Stronger With You Intensely',
     marca: 'Emporio Armani',
-    familia: 'Frescos',
+    familia: 'Dulces',
     imagen: stronger,
-    descripcion: 'Texto de ejemplo.',
-    notas: { salida: ['A'], corazon: ['B'], fondo: ['C'] },
-    // Salvo Elixir
+    descripcion:
+      'Una fragancia intensa, cálida y dulce, con especias y notas ambaradas. Ideal para los días fríos y las ocasiones especiales.',
+    notas: {
+      salida: ['Pimienta rosa', 'Enebro de Virginia', 'Violeta'],
+      corazon: ['Toffee', 'Canela', 'Lavanda', 'Salvia'],
+      fondo: ['Vainilla', 'Ámbar', 'Haba tonka', 'Gamuza'],
+    },
     acordes: [
-      { nombre: 'Avainillado', nivel: 100 },
-      { nombre: 'Dulce', nivel: 90 },
-      { nombre: 'Ámbar', nivel: 60 },
-      { nombre: 'Cálido especiado', nivel: 82 },
-      { nombre: 'Tabaco', nivel: 76 },
-      { nombre: 'Dulce', nivel: 70 },
-      { nombre: 'Avainillado', nivel: 62 },
-      { nombre: 'Atalcado', nivel: 54 },
-      { nombre: 'Pachulí', nivel: 46 },
-      { nombre: 'Iris', nivel: 38 },
+      { nombre: 'Avainillado', nivel: 100, color: '#FFF4A3' },
+      { nombre: 'Dulce', nivel: 90, color: '#EF4146' },
+      { nombre: 'Ámbar', nivel: 75, color: '#C97845' },
+      { nombre: 'Canela', nivel: 70, color: '#E59155' },
+      { nombre: 'Cálido especiado', nivel: 65, color: '#E66C4A' },
+      { nombre: 'Atalcado', nivel: 58, color: '#F4E2D6' },
+      { nombre: 'Aromático', nivel: 52, color: '#80C9B6' },
+      { nombre: 'Especiado suave', nivel: 48, color: '#ECA995' },
+      { nombre: 'Caramelo', nivel: 42, color: '#EBC58F' },
     ],
-    precios: { '2 ml': 3990, '5 ml': 8490, '10 ml': 15990 },
+    precios: { '3 ml': 6000, '5 ml': 9000, '10 ml': 16000 },
     destacado: false,
   },
   {
-    id: 'jean-lowe',
-    nombre: 'Perfume de prueba 3',
-    marca: 'Marca Y',
-    familia: 'Dulces',
-    imagen: scandal,
-    descripcion: 'Texto de ejemplo.',
-    notas: { salida: ['A'], corazon: ['B'], fondo: ['C'] },
-    // Jean Lowe Vibe
+    id: 'acqua-di-gio-profondo',
+    nombre: 'Acqua di Giò Profondo',
+    marca: 'Giorgio Armani',
+    familia: 'Frescos',
+    imagen: acqua,
+    descripcion:
+      'Una fragancia masculina de frescura intensa y duradera, ideal para el día a día, el trabajo o la universidad.',
+    notas: {
+      salida: ['Notas marinas', 'Aquozone', 'Bergamota', 'Mandarina verde'],
+      corazon: ['Romero', 'Lavanda', 'Ciprés', 'Resina almáciga del lentisco'],
+      fondo: ['Notas minerales', 'Almizcle', 'Pachulí', 'Ámbar'],
+    },
     acordes: [
-      { nombre: 'Cítrico', nivel: 100 },
-      { nombre: 'Afrutado', nivel: 78 },
-      { nombre: 'Aromático', nivel: 72 },
-      { nombre: 'Verde', nivel: 64 },
-      { nombre: 'Fresco especiado', nivel: 56 },
-      { nombre: 'Dulce', nivel: 46 },
-      { nombre: 'Atalcado', nivel: 38 },
+      { nombre: 'Marino', nivel: 100, color: '#1C5FA0' },
+      { nombre: 'Aromático', nivel: 100, color: '#37A18F' },
+      { nombre: 'Cítrico', nivel: 80, color: '#F5F583' },
+      { nombre: 'Fresco especiado', nivel: 74, color: '#A6D65C' },
+      { nombre: 'Fresco', nivel: 70, color: '#B5E5EC' },
+      { nombre: 'Amaderado', nivel: 64, color: '#A98566' },
+      { nombre: 'Mineral', nivel: 58, color: '#A5D5DA' },
+      { nombre: 'Salado', nivel: 52, color: '#F6FBFB' },
+      { nombre: 'Lavanda', nivel: 48, color: '#E7CAF0' },
     ],
-    precios: { '2 ml': 5490, '5 ml': 10990, '10 ml': 19990 },
+    precios: { '3 ml': 4500, '5 ml': 7000, '10 ml': 12000 },
     destacado: true,
   },
 ]

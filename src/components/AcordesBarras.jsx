@@ -56,7 +56,7 @@ export default function AcordesBarras({ acordes }) {
                 ease: 'easeOut',
               }}
               className="h-full rounded-full"
-              style={{ backgroundColor: colorDe(acorde.nombre) }}
+              style={{ backgroundColor: acorde.color ?? colorDe(acorde.nombre) }}
             />
           </div>
         </li>
