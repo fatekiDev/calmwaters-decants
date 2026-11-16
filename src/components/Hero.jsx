@@ -63,7 +63,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="mx-auto aspect-[4/5] w-full max-w-xs rounded-lg border border-linea object-cover"
+          className="mx-auto aspect-4/5 w-full max-w-xs rounded-lg border border-linea object-cover"
         />
 
       </div>

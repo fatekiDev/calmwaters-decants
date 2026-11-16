@@ -1,4 +1,4 @@
-import { formatearPrecio } from '../utils/Formato'
+import { formatearPrecio } from '../utils/FormatearPrecio'
 
 export default function ProductCard({ perfume, onSeleccionar }) {
   // Precio más bajo entre todos los formatos
@@ -10,7 +10,7 @@ export default function ProductCard({ perfume, onSeleccionar }) {
       onClick={() => onSeleccionar(perfume)}
       className="group text-left"
     >
-      <div className="aspect-[4/5] overflow-hidden rounded-lg border border-linea bg-carbon">
+      <div className="aspect-4/5 overflow-hidden rounded-lg border border-linea bg-carbon">
         <img
           src={perfume.imagen}
           alt={perfume.nombre}

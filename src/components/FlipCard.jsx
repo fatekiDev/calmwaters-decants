@@ -59,7 +59,7 @@ export default function FlipCard({
             alt={nombre}
             className="h-full w-full -translate-y-23 object-cover"
           />
-          <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-grafito to-transparent p-5 text-left">
+          <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-grafito to-transparent p-5 text-left">
             <p className="text-xs uppercase tracking-[0.3em] text-dorado">
               Frasco original
             </p>
