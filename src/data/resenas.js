@@ -20,7 +20,7 @@ export const RESENAS = [
   {
     id: 4,
     estrellas: 5,
-    texto: ' Excelente atención, muy buena calidad de perfumes y entrega rápida. ',
+    texto: ' Muy buena experiencia, el perfume llegó impecable y todo tal como lo esperaba. Excelente atención y buena disposición desde el primer momento. 100% recomendado, da gusto comprar en emprendimientos así. ¡Éxito y muchas gracias! ',
     autor: '@i_blink',
   },
 ]
