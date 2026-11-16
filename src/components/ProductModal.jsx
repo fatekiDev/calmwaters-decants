@@ -43,7 +43,7 @@ export default function ProductModal({ perfume, onCerrar }) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25 }}
       onClick={onCerrar}
-      className="fixed inset-0 z-60 flex items-center justify-center bg-grafito/80 p-4 backdrop-blur-sm"
+      className="fixed inset-0 z-[60] flex items-center justify-center bg-grafito/80 p-4 pb-20 backdrop-blur-sm md:pb-4"
     >
       <motion.div
         role="dialog"
@@ -54,7 +54,7 @@ export default function ProductModal({ perfume, onCerrar }) {
         exit={{ opacity: 0, y: 24, scale: 0.97 }}
         transition={{ duration: 0.3, ease: 'easeOut' }}
         onClick={(e) => e.stopPropagation()}
-        className="relative grid max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-xl border border-linea bg-carbon md:grid-cols-2"
+        className="relative grid max-h-full w-full max-w-4xl overflow-y-auto rounded-xl border border-linea bg-carbon md:grid-cols-2"
       >
         {/* Botón X */}
         <button
