@@ -43,7 +43,7 @@ export default function ProductModal({ perfume, onCerrar }) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.25 }}
       onClick={onCerrar}
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-grafito/80 p-4 pb-20 backdrop-blur-sm md:pb-4"
+      className="fixed inset-0 z-60 flex items-center justify-center bg-grafito/80 p-4 pb-20 backdrop-blur-sm md:pb-4"
     >
       <motion.div
         role="dialog"
