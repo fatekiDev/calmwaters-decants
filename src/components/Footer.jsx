@@ -34,6 +34,24 @@ export default function Footer() {
           © {new Date().getFullYear()} {SITE.nombre}
         </p>
       </div>
+      <div className="mx-auto mt-10 max-w-6xl border-t border-linea/60 px-5 pt-6 text-center text-xs text-bruma md:text-right">
+        Sitio creado por{' '}
+        <a
+          href={SITE.autor.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-marfil/80 transition-colors hover:text-dorado"
+        >
+          {SITE.autor.nombre}
+        </a>
+        {' · '}
+        <a
+          href={`mailto:${SITE.autor.correo}`}
+          className="transition-colors hover:text-dorado"
+        >
+          Contacto
+        </a>
+      </div>
     </footer>
   )
 }
