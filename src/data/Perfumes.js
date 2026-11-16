@@ -1,4 +1,4 @@
-import scandal from './src/assets/Scandal.png'
+import scandal from '../assets/perfumes/scandal-pour-homme.webp'
 
 export const PERFUMES = [
   {

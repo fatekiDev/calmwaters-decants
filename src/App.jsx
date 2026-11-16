@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import QueEsDecant from './components/QueEsDecant'
 import ComoPedir from './components/ComoPedir'
 import Catalogo from './components/Catalogo'
+import Rendimiento from './components/Rendimiento'
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <main>
         <Hero />
         <QueEsDecant />
+        <Rendimiento />
         <ComoPedir />
         <Catalogo />
       </main>
