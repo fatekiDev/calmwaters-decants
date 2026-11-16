@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import QueEsDecant from './components/QueEsDecant'
+import ComoPedir from './components/ComoPedir'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <main>
         <Hero />
         <QueEsDecant />
+        <ComoPedir />
       </main>
     </>
   )

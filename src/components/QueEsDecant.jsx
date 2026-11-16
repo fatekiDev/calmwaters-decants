@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import FlipCard from './FlipCard'
-import frasco from '../assets/scandal-pour-homme.webp'
+import frasco from '../assets/perfumes/scandal-pour-homme.webp'
 
 const BENEFICIOS = [
   '100% originales',
