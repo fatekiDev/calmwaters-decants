@@ -1,13 +1,15 @@
 import scandal from '../assets/perfumes/scandal-pour-homme.webp'
 import stronger from '../assets/perfumes/stronger-with-you.webp'
 import acqua from '../assets/perfumes/acqua-di-gio.webp'
+import liquidBrun from '../assets/perfumes/Liquid-brun.webp'
+import mandarinSky from '../assets/perfumes/ODYSSEY-MANDARIN.webp'
 
 export const PERFUMES = [
   {
     id: 'scandal-pour-homme',
     nombre: 'Scandal Pour Homme',
     marca: 'Jean Paul Gaultier',
-    familia: 'Amaderados', // define el filtro del catálogo
+    familia: 'Dulces',
     imagen: scandal,
     descripcion:
       'Una fragancia moderna que combina el dulzor del caramelo con la frescura de la esclarea y un fondo amaderado. Versátil para el día a día o una salida especial.',
@@ -27,7 +29,7 @@ export const PERFUMES = [
       { nombre: 'Amaderado', nivel: 48, color: '#B69A7D' },
     ],
     precios: { '3 ml': 5500, '5 ml': 8000, '10 ml': 14000 },
-    destacado: true, // aparecerá en la sección "Destacados"
+    destacado: true,
   },
   
   {
@@ -82,6 +84,60 @@ export const PERFUMES = [
       { nombre: 'Lavanda', nivel: 48, color: '#E7CAF0' },
     ],
     precios: { '3 ml': 4500, '5 ml': 7000, '10 ml': 12000 },
+    destacado: false,
+  },
+  {
+    id: 'liquid-brun',
+    nombre: 'Liquid Brun',
+    marca: 'French Avenue',
+    familia: 'Dulces',
+    imagen: liquidBrun,
+    descripcion:
+      'Una fragancia cálida e intensa, con cardamomo, canela y cedro. Su carácter especiado y duradero la hace ideal para noches especiales y ocasiones en las que quieras dejar huella.',
+    notas: {
+      salida: ['Canela', 'Flor de azahar del naranjo', 'Cardamomo', 'Bergamota'],
+      corazon: ['Vainilla', 'Bourbon', 'Elemí'],
+      fondo: ['Praliné', 'Ambroxan', 'Madera de gaiac', 'Almizcle'],
+    },
+    acordes: [
+      { nombre: 'Dulce', nivel: 100, color: '#EF4146' },
+      { nombre: 'Cálido especiado', nivel: 92, color: '#D43C0D' },
+      { nombre: 'Avainillado', nivel: 90, color: '#FFF4A3' },
+      { nombre: 'Canela', nivel: 78, color: '#DB8C53' },
+      { nombre: 'Floral blanco', nivel: 67, color: '#F4F5FA' },
+      { nombre: 'Cítrico', nivel: 62, color: '#F5F583' },
+      { nombre: 'Atalcado', nivel: 57, color: '#F4E2D6' },
+      { nombre: 'Aromático', nivel: 54, color: '#80C9B6' },
+      { nombre: 'Almizclado', nivel: 52, color: '#E9DDF0' },
+      { nombre: 'Ámbar', nivel: 47, color: '#D99573' },
+    ],
+    precios: { '3 ml': 3500, '5 ml': 4500, '10 ml': 8000 },
+    destacado: true,
+  },
+  {
+    id: 'mandarin-sky',
+    nombre: 'Mandarin Sky',
+    marca: 'Odyssey',
+    familia: 'Frescos',
+    imagen: mandarinSky,
+    descripcion:
+      'Una fragancia vibrante que combina la frescura cítrica de la mandarina con matices dulces, florales y amaderados. Su aroma refrescante y duradero es ideal para el día a día.',
+    notas: {
+      salida: ['Mandarina', 'Naranja', 'Azafrán', 'Salvia'],
+      corazon: ['Caramelo', 'Haba tonka', 'Tagete (clavelón)'],
+      fondo: ['Ambroxan', 'Cedro', 'Vetiver'],
+    },
+    acordes: [
+      { nombre: 'Cítrico', nivel: 100, color: '#F5F583' },
+      { nombre: 'Caramelo', nivel: 88, color: '#EBC58F' },
+      { nombre: 'Dulce', nivel: 84, color: '#EF555C' },
+      { nombre: 'Ámbar', nivel: 76, color: '#D99573' },
+      { nombre: 'Aromático', nivel: 66, color: '#80C9B6' },
+      { nombre: 'Avainillado', nivel: 60, color: '#FFF4A3' },
+      { nombre: 'Amaderado', nivel: 55, color: '#B69A7D' },
+      { nombre: 'Cálido especiado', nivel: 48, color: '#E66C4A' },
+    ],
+    precios: { '3 ml': 3000, '5 ml': 4000, '10 ml': 7000 },
     destacado: true,
   },
 ]
