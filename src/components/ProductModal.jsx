@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { SITE } from '../data/site'
-import { FORMATOS } from '../data/formatos'
+import { FORMATOS } from '../data/Formatos'
 import { formatearPrecio } from '../utils/FormatearPrecio'
 import AcordesBarras from './AcordesBarras'
 

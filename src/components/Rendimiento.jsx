@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FORMATOS } from '../data/formatos'
+import { FORMATOS } from '../data/Formatos'
 
 export default function Rendimiento() {
   return (

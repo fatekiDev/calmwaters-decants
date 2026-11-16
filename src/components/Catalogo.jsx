@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { PERFUMES } from '../data/perfumes'
+import { PERFUMES } from '../data/Perfumes'
 import ProductCard from './ProductCard'
 
 // Los filtros se generan solos a partir de los datos

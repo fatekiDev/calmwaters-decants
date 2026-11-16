@@ -1,4 +1,4 @@
-import { PERFUMES } from '../data/perfumes'
+import { PERFUMES } from '../data/Perfumes'
 import ProductCard from './ProductCard'
 
 // Solo los perfumes marcados con destacado: true
