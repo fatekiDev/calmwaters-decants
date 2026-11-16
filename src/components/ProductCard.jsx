@@ -1,4 +1,4 @@
-import { formatearPrecio } from '../utils/formato'
+import { formatearPrecio } from '../utils/Formato'
 
 export default function ProductCard({ perfume, onSeleccionar }) {
   // Precio más bajo entre todos los formatos
