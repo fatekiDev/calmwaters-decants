@@ -70,7 +70,7 @@ export default function ProductModal({ perfume, onCerrar }) {
         <img
           src={perfume.imagen}
           alt={perfume.nombre}
-          className="aspect-4/5 w-full object-cover md:aspect-auto md:h-full"
+          className="aspect-4/5 w-full object-contain p-8 md:aspect-auto md:h-full md:p-12"
         />
 
         {/* Contenido */}

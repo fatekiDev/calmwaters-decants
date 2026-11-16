@@ -1,4 +1,5 @@
 import scandal from '../assets/perfumes/scandal-pour-homme.webp'
+import stronger from '../assets/perfumes/stronger-with-you.webp'
 
 export const PERFUMES = [
   {
@@ -16,21 +17,20 @@ export const PERFUMES = [
     precios: { '3 ml': 4990, '5 ml': 9990, '10 ml': 17990 },
     destacado: true, // aparecerá en la sección "Destacados"
   },
-  // Los dos siguientes son de relleno solo para probar los filtros.
-  // Bórralos cuando cargues los perfumes reales.
+  
   {
-    id: 'salvo-elixir',
-    nombre: 'Perfume de prueba 2',
-    marca: 'Marca X',
+    id: 'stronger-with-you',
+    nombre: 'Stronger With You',
+    marca: 'Emporio Armani',
     familia: 'Frescos',
-    imagen: scandal,
+    imagen: stronger,
     descripcion: 'Texto de ejemplo.',
     notas: { salida: ['A'], corazon: ['B'], fondo: ['C'] },
     // Salvo Elixir
     acordes: [
-      { nombre: 'Ámbar', nivel: 100 },
-      { nombre: 'Amaderado', nivel: 94 },
-      { nombre: 'Fresco especiado', nivel: 88 },
+      { nombre: 'Avainillado', nivel: 100 },
+      { nombre: 'Dulce', nivel: 90 },
+      { nombre: 'Ámbar', nivel: 60 },
       { nombre: 'Cálido especiado', nivel: 82 },
       { nombre: 'Tabaco', nivel: 76 },
       { nombre: 'Dulce', nivel: 70 },
