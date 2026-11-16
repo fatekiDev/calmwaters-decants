@@ -76,7 +76,7 @@ export default function FlipCard({
           <p className="text-xs uppercase tracking-[0.3em] text-dorado">
             Tu decant
           </p>
-          <p className="font-display text-3xl">La misma fragancia, en el tamaño quez prefieras.</p>
+          <p className="font-display text-3xl">La misma fragancia, en el tamaño que prefieras.</p>
 
           <ul className="flex gap-3">
             {formatos.map((formato) => (

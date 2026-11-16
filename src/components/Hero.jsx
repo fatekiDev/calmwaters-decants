@@ -13,7 +13,10 @@ const item = {
 
 export default function Hero() {
   return (
-    <section id="inicio" className="flex min-h-screen items-center pb-16 pt-24">
+    <section
+      id="inicio"
+      className="flex min-h-[calc(100svh-6rem)] items-center pt-24 md:min-h-[calc(100svh-7rem)]"
+    >
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2">
         {/* Texto */}
         <motion.div variants={contenedor} initial="hidden" animate="visible">

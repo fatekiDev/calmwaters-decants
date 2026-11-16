@@ -10,7 +10,7 @@ const BENEFICIOS = [
 
 export default function QueEsDecant() {
   return (
-    <section id="que-es" className="py-24">
+    <section id="que-es" className="pb-24">
       <div className="mx-auto grid max-w-6xl items-center gap-16 px-5 md:grid-cols-2">
         {/* Texto */}
         <motion.div
